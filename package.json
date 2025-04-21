@@ -1,0 +1,41 @@
+{
+  "name": "apex",
+  "version": "1.0.0",
+  "description": "SASTRA AI C++ to Rust Converter",
+  "main": "main.js",
+  "author": "Giridhar Aditya",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.1",
+    "diff-match-patch": "^1.0.5"
+  },
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.sastra.cpp2rust",
+    "productName": "SASTRA Apex Converter",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "frontend/**/*",
+      "icon.ico"
+    ],
+    "extraResources": [
+      {
+        "from": "backend/dist/app.exe",
+        "to": "app.exe"
+      }
+    ],
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico"
+    }
+  }
+}

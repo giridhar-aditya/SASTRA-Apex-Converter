@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>C++ to Rust Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #countdownText {
+      color: red;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <img src="images/sastra_logo.png" alt="Sastra Logo" class="logo left-logo">
+    <img src="images/apex_logo.png" alt="APEX Logo" class="logo center-logo">
+    <img src="images/bosch_logo.png" alt="Bosch Logo" class="logo right-logo">
+  </header>
+
+  <main class="content">
+    <h1>C++ to Rust Converter</h1>
+
+    <div class="button-container">
+      <button id="browseBtn">Browse C++ File</button>
+      <span id="cppPath" class="path-label"></span>
+    </div>
+
+    <div class="button-container">
+      <button id="outputBtn">Select Output Folder</button>
+      <span id="outputPath" class="path-label"></span>
+    </div>
+
+    <div class="button-container">
+      <button id="convertBtn">Convert (Rule-based)</button>
+      <button id="convertAiBtn">Convert using AI</button>
+      <div id="countdownText" class="hidden">Please wait till the Backend Loads</div>
+    </div>
+
+    <div id="aiStatus" class="hidden">AI conversion in progress...</div>
+    <div id="toast" class="toast hidden"></div>
+  </main>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

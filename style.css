@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  height: 50px;
+}
+
+.center-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content {
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #003366;
+}
+
+.button-container {
+  margin: 20px 0;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #0078D4;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #005a9e;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+  background-color: #004377;
+}
+
+.path-label {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+#aiStatus {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #0078D4;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#countdownText {
+  font-size: 15px;
+  font-weight: 500;
+  color: #0d1b2a; /* deep navy for strong readability */
+  background-color: #f1f5f9; /* soft neutral gray-blue background */
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto 0; /* center and space it */
+  text-align: center;
+  max-width: fit-content;
+  transition: opacity 0.5s ease;
+}
+
+/* Fade out animation */
+.fade-out {
+  opacity: 0;
+}
+
+
+
+/* Center the container */
+.button-container {
+  text-align: center;
+}
+
+/* Fade-out animation */
+.fade-out {
+  opacity: 0;
+}
+
+
+
