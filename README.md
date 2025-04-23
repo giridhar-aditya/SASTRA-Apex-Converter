@@ -35,5 +35,5 @@ Built with **Electron** for the frontend and **Flask + PyTorch** for the backend
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/sastra-apex-converter.git
+git clone https://github.com/giridhar-aditya/sastra-apex-converter.git
 cd sastra-apex-converter
